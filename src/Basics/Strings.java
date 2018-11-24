@@ -21,7 +21,7 @@ String passportNumber ="F8767566";
 System.out.print(firstname.substring(0, 1) );
 System.out.print(lastname.substring(0, 1));
 System.out.print(passportNumber.substring(5));
-
+		System.out.println("**********"+firstname.length());
 	}
 
 }

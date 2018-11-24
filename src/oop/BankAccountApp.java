@@ -11,6 +11,9 @@ public class BankAccountApp {
         account1.deposit(5000);
         account1.withdraw(1000);
         System.out.println(account1.toString());
+        account1.getAccountName();
+//        account1.(sav,1000);
+
         /*
         System.out.println(account1.accountName = "Joe");
         System.out.println(account1.roundingNumber);

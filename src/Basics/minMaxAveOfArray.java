@@ -33,7 +33,7 @@ public class minMaxAveOfArray {
 
 		static int averageInArray ( int[] Sequence){
 			int sum = 0;
-			int ave = 0;
+			int ave =0;
 			for (int n = 0; n < Sequence.length; n++) {
 
 				sum = sum + Sequence[n];

@@ -10,6 +10,7 @@ public class BankAccountApp {
         acc1.makeDeposit(500);
         acc1.makeDeposit(1000);
         acc1.payBill(500);
+    
         acc1.accure();
         System.out.println(acc1.toString());
     }

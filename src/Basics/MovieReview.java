@@ -5,7 +5,7 @@ public class MovieReview {
 		double rating = 7.5;
 		String review = "okay";
 		//rating and review is good - commercial success
-		if ((rating >= 7.5) && (review=="good"||review == "excellent" )){
+		if ((rating >= 7.5) && (review=="good" || review == "excellent" )){
 			System.out.println("Movie rating is"+ rating  + "and movie review is "+ review+ "1.Commercial success!!");
 		}
 		

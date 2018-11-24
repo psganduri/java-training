@@ -1,5 +1,7 @@
 package Basics;
 
+import java.sql.SQLOutput;
+
 public class Cities {
 
 	public static void main(String[] args) {
@@ -7,6 +9,7 @@ public class Cities {
 		String[] cities = {"Delhi", "Bombay","Calcutta", "Bangalore"};
 			
 		System.out.println(cities[0]);
+		System.out.println();
 		
 	
 		//DEclare array

@@ -11,7 +11,8 @@ public class BankAccount {
     String tfn;
     double balance;
 //Constructors
-    BankAccount(){
+    BankAccount()
+    {
     System.out.println("New bank account opened");
 }
 BankAccount (String accountType){
@@ -33,6 +34,7 @@ BankAccount (String accountType){
     }
 
 //setters /Getters
+
 
     public void setAccountName(String accountName) {
         this.accountName = "Mr. " + accountName;

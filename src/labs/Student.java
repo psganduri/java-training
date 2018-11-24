@@ -1,7 +1,5 @@
 package labs;
 
-import sun.print.resources.serviceui_zh_TW;
-
 import java.sql.SQLOutput;
 
 class StudentDatabase {
