@@ -92,7 +92,7 @@ public class MorePractice {
 //                accountData.add(line);
 
                 for (int i = 1; i <= 10; i++) {
-                    System.out.println("test");
+                    System.out.println("SaveReadFromProperties");
 //            testMap.put(excelsheet(A,i),excelsheet(B,i));
                 }
 

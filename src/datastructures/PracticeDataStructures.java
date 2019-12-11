@@ -28,7 +28,7 @@ public class PracticeDataStructures {
 
     }
 
-    public static void listUtility (ArrayList<String > teamNames){
+    public static ArrayList listUtility (ArrayList<String > teamNames){
         teamNames.add("AIA Knights");
         teamNames.add("AIA chargers");
         teamNames.add("team beta");
@@ -38,6 +38,7 @@ public class PracticeDataStructures {
         for(String tv: teamNames){
             System.out.println("Team Name selected is: "+tv);
         }
+        return teamNames;
 
 
     }

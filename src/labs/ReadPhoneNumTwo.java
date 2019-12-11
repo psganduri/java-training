@@ -26,12 +26,15 @@ br.close();
 	e.printStackTrace();
 }
 try {
-	
+
 	if (phoneNumber.length()!=9) {
 		throw new NineDigitsException(phoneNumber);
 	}
 	if (phoneNumber.substring(0, 1).equals("4")) {
 		throw new AreacodeException(phoneNumber);
+		}
+	if(phoneNumber.substring(0,2).equals("0")){
+		throw new NumberzeroException(phoneNumber);
 		}
 //	System.out.println(phoneNumber.substring(2));
 //	System.out.println(phoneNumber.substring(0, 1));
@@ -44,14 +47,14 @@ try {
 	for (int n=0;n<=phoneNumber.length()-2;n++) {
 		if (phoneNumber.substring(n,n+1).equals("0")){
 			if ((phoneNumber.substring(n+1,n+2).equals("0"))&&(phoneNumber.substring(n+2,n+3).equals("0"))) {
-				throw new EmergencyNumberException(phoneNumber);	
+				throw new EmergencyNumberException(phoneNumber);
 			}
 		}
-			
-			
+
+
 	}
-	
-	
+
+
 }catch (NineDigitsException e) {
 	System.out.println("Error:Phone number is not 9 digits");
 	System.out.println(e.toString());
@@ -61,6 +64,9 @@ try {
 }catch (EmergencyNumberException e) {
 	System.out.println("Error:Phone number is 000 in it");
 	System.out.println(e.toString());
+}catch (NumberzeroException e){
+	System.out.println("Second digit should not be 0");
+	System.out.println(e.toString());
 }
 
 
@@ -68,7 +74,8 @@ try {
 
 
 	}
-	
+
+
 }
 class NineDigitsException extends Exception {
 	String num;
@@ -77,7 +84,7 @@ class NineDigitsException extends Exception {
 	}
 	public String toString () {
 		return ("Phonumber is: "+ num +" Phonenumber should be 9 digits long");
-		
+
 	}
 }
 
@@ -88,10 +95,10 @@ class AreacodeException extends Exception {
 	}
 	public String toString () {
 		return ("Phonumber is: "+ num +" Areacode should start with zero");
-		
+
 	}
 }
-	
+
 
 class EmergencyNumberException extends Exception {
 	String num;
@@ -100,6 +107,16 @@ class EmergencyNumberException extends Exception {
 	}
 	public String toString () {
 		return ("Phonumber is: "+ num +" Phone number should not contain 000");
-		
+
 	}
+}
+
+class NumberzeroException extends Exception{
+	String num;
+	NumberzeroException(String num){
+		this.num=num;
+		}
+		public String toString (){
+		return num;
+		}
 }

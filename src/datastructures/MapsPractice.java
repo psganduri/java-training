@@ -20,7 +20,7 @@ public class MapsPractice {
         System.out.println("1. Size of the Map is: "+personInfo.size());
         System.out.println("2. Key set in the Map is: "+personInfo.keySet());
         System.out.println("3"+personInfo.values());
-        System.out.println(personInfo.get("Name"));
+        System.out.println(personInfo.get("Name2"));
         System.out.println("--------------------");
 
         
@@ -31,12 +31,17 @@ public class MapsPractice {
         
 //        for (Entry<String,String> entry : personInfo.entrySet()) {
 //        	System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
-//        }
+//        }x
 
         for(Entry<String, String> entry1 : personInfo.entrySet()) {
         	System.out.println("Key: "+entry1.getKey() + ", Values: "+entry1.getValue());
         }
+        testmethod();
 
 
+    }
+
+    public static void testmethod (){
+        System.out.println("*****************HERE I AM**************");
     }
 }

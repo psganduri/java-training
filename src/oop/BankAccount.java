@@ -1,11 +1,13 @@
 package oop;
 
-public class BankAccount {
+import labs.Iinterest;
+
+public class BankAccount implements Iinterest{
     //Declare Variables
-   private String accountName;
-    //Static Variable
+    //Static Variable or class variable
     private static final String roundingNumber = "1234";
     //Instance Variables
+    private String accountName;
     String accountNumber;
     String accountType;
     String tfn;
@@ -16,7 +18,7 @@ public class BankAccount {
     System.out.println("New bank account opened");
 }
 BankAccount (String accountType){
-    //accountType, InitDeposit, Msg are local variables
+    //accountType, InitDeposit, Msg are local variables************These are declared inside method and only last inside it//
     System.out.println("New account type Opened: " + accountType);
 }
     BankAccount (String accountType, double InitDeposit){
@@ -68,5 +70,10 @@ System.out.println("Your latest balance is " + balance);
     public String toString(){
     return  "["+ accountName + "," + accountNumber + ","+balance +","+roundingNumber +"]";
     }
-
+    
+@Override
+public void accure() {
+	System.out.println("Implemented interface method");
+	
+}
 }

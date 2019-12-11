@@ -10,11 +10,12 @@ public class Maps {
 //        1.Implement Map interface
         TreeMap<Integer,String> TMap = new TreeMap<>();
         TMap.put(7,"JamesBondhere");
-        System.out.println(TMap.keySet());
-        System.out.println(TMap);
+        System.out.println("keyset is "+TMap.keySet());
+        System.out.println("Tmap is"+TMap);
 for(int ketvalue: TMap.keySet()) {
     System.out.println(ketvalue+" "+TMap.get(ketvalue));
 mapUtility(TMap);
+
 
 }
 }

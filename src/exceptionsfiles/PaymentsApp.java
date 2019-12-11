@@ -10,7 +10,7 @@ public class PaymentsApp {
             //    1.Ask user to enter Payment input
             System.out.print("Enter PAyment amount:");
 
-            //    2.Get input and test the value
+            //    2.Get input and SaveReadFromProperties the value
             Scanner in = new Scanner(System.in);
 
             //    3.Handel exceptions appropriately
